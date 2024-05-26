@@ -3,3 +3,4 @@
 ^LICENSE\.md$
 ^src/\.cargo$
 ^src/rust/vendor$
+^\.github$
