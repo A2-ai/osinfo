@@ -1,0 +1,10 @@
+Package: osinfo
+Title: Get the os info in a cross platform way 
+Version: 0.0.0.9000
+Authors@R: 
+    person("Devin", "Pastoor", , "devin.pastoor@gmail.com", role = c("aut", "cre"))
+Description: Get the os info in a cross platform way. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
