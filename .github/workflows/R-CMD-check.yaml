@@ -30,8 +30,8 @@ jobs:
 
       - name: vendor
         run: |
-        cd ./src/rust
-        cargo vendor
+          cd ./src/rust
+          cargo vendor
 
       - uses: r-lib/actions/check-r-package@v2
         with:
