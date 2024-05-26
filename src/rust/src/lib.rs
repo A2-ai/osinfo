@@ -1,4 +1,5 @@
 use extendr_api::prelude::*;
+use std::env;
 
 #[derive(Debug, PartialEq, IntoDataFrameRow)]
 struct OsInfo {
@@ -13,8 +14,10 @@ fn os_info_impl() -> List {
     list!(
         version = info.version().to_string(),
         os_type = info.os_type().to_string(),
+        edition = info.edition(),
         architecture = info.architecture(),
-        codename = info.codename()
+        codename = info.codename(),
+        os = env::consts::OS,
     )
 }
 
