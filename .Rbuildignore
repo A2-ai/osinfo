@@ -1,3 +1,4 @@
 ^osinfo\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
+^src/\.cargo$
