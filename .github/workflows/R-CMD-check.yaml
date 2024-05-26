@@ -27,7 +27,7 @@ jobs:
         with:
           extra-packages: any::rcmdcheck
           needs: check
-
+      - uses: actions-rust-lang/setup-rust-toolchain@v1
       - name: vendor
         run: |
           cd ./src/rust
