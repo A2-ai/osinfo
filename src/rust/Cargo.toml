@@ -10,3 +10,4 @@ name = 'osinfo'
 
 [dependencies]
 extendr-api = '*'
+os_info = { version = "3", default-features = false }
