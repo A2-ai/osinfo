@@ -1,6 +1,6 @@
 Package: osinfo
 Title: Get the os info in a cross platform way 
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: 
     person("Devin", "Pastoor", , "devin.pastoor@gmail.com", role = c("aut", "cre"))
 Description: Get the os info in a cross platform way. 
