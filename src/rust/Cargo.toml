@@ -9,5 +9,5 @@ crate-type = [ 'staticlib' ]
 name = 'osinfo'
 
 [dependencies]
-extendr-api = '*'
+extendr-api = "0.9"
 os_info = {version = "3.9.0", default-features = false}

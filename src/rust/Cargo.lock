@@ -4,32 +4,40 @@ version = 4
 
 [[package]]
 name = "extendr-api"
-version = "0.6.0"
+version = "0.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c7d55a0174c4df17c467fb59b3f836bec31d1af6d56c4182cfdf34a62d1553a4"
+checksum = "803569de0d273b4bf281871046a7d63a23cc12776bdb5b63de5c1e81aae30728"
 dependencies = [
+ "extendr-ffi",
  "extendr-macros",
- "libR-sys",
  "once_cell",
  "paste",
+ "readonly",
 ]
 
 [[package]]
-name = "extendr-macros"
-version = "0.6.0"
+name = "extendr-ffi"
+version = "0.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "33833971650cade4bfa3097b979506bf2b4934b60392e110f95b94c2406cbb84"
+checksum = "5ba82ddd48e85202654997b81e4b1d39c0c54b5dcd7cae92705f807bf528efcf"
+
+[[package]]
+name = "extendr-macros"
+version = "0.9.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ba8fad8d2a0d0651b1947042cf3a8beddc73d39cec3485b200fdfd24cb3bb6aa"
 dependencies = [
+ "lazy_static",
  "proc-macro2",
  "quote",
  "syn",
 ]
 
 [[package]]
-name = "libR-sys"
-version = "0.6.0"
+name = "lazy_static"
+version = "1.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a34aaa68a201f71eab5df5a67d1326add8aaf029434e939353bcab0534919ff1"
+checksum = "bbd2bcb4c963f2ddae06a2efc7e9f3591312473c50c6685e1f298068316e66fe"
 
 [[package]]
 name = "log"
@@ -39,9 +47,9 @@ checksum = "a7a70ba024b9dc04c27ea2f0c0548feb474ec5c54bba33a7f72f873a39d07b24"
 
 [[package]]
 name = "once_cell"
-version = "1.19.0"
+version = "1.21.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3fdb12b2476b595f9358c5161aa467c2438859caa136dec86c26fdd2efe17b92"
+checksum = "9f7c3e4beb33f85d45ae3e3a1792185706c8e16d043238c593331cc7cd313b50"
 
 [[package]]
 name = "os_info"
@@ -63,33 +71,44 @@ dependencies = [
 
 [[package]]
 name = "paste"
-version = "1.0.14"
+version = "1.0.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "de3145af08024dea9fa9914f381a17b8fc6034dfb00f3a84013f7ff43f29ed4c"
+checksum = "57c0d7b74b563b49d38dae00a0c37d4d6de9b432382b2892f0574ddcae73fd0a"
 
 [[package]]
 name = "proc-macro2"
-version = "1.0.84"
+version = "1.0.106"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ec96c6a92621310b51366f1e28d05ef11489516e93be030060e5fc12024a49d6"
+checksum = "8fd00f0bb2e90d81d1044c2b32617f68fcb9fa3bb7640c23e9c748e53fb30934"
 dependencies = [
  "unicode-ident",
 ]
 
 [[package]]
 name = "quote"
-version = "1.0.36"
+version = "1.0.45"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0fa76aaf39101c457836aec0ce2316dbdc3ab723cdda1c6bd4e6ad4208acaca7"
+checksum = "41f2619966050689382d2b44f664f4bc593e129785a36d6ee376ddf37259b924"
 dependencies = [
  "proc-macro2",
 ]
 
 [[package]]
-name = "syn"
-version = "2.0.66"
+name = "readonly"
+version = "0.2.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c42f3f41a2de00b01c0aaad383c5a45241efc8b2d1eda5661812fda5f3cdcff5"
+checksum = "f2a62d85ed81ca5305dc544bd42c8804c5060b78ffa5ad3c64b0fb6a8c13d062"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
+name = "syn"
+version = "2.0.117"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e665b8803e7b1d2a727f4023456bbbbe74da67099c585258af0ad9c5013b9b99"
 dependencies = [
  "proc-macro2",
  "quote",
